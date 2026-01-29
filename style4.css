@@ -1,0 +1,112 @@
+.fifthSection {
+    padding-top: 40px;
+}
+
+.fifthSectionHeading {
+    font-size: 44px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftCards {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightCards {
+    display: flex;
+    flex-direction: column;
+}
+
+.edu-cards {
+    background-color: #1a1a4a;
+    height: 150px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    font-size: 1.5rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.edu-cards:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 10px rgba(0, 100, 255, 0.5)
+}
+
+.sixthSection {
+    padding: 80px 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.sixthSection h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.sixthSection p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.sixthSection form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sixthSection input,
+.sixthSection textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.sixthSection input:focus,
+.sixthSection textarea:focus {
+    border-color: #4f46e5;
+}
+
+.sixthSection textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.sixthSection button {
+    padding: 12px;
+    font-size: 1rem;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sixthSection button:hover {
+    background: #4338ca;
+}
+
+.contact-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-links a {
+    color: #4f46e5;
+    text-decoration: none;
+}

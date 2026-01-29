@@ -1,0 +1,121 @@
+.divider {
+    border: none;
+    height: 2px;
+    width: 90%;
+    margin: 0 80px;
+    margin-top: 100px;
+    background-color: rgb(111, 111, 244);
+}
+
+
+.secondSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 110px;
+    padding-top: 50px;
+}
+
+.secondSectionHeading {
+    font-size: 44px;
+    margin-top: -25px;
+}
+
+.secondSectionContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondSectionContent img {
+    width: 200px;
+    height: auto;
+    margin: 10px 80px;
+    border: 3px solid #5412e3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 100, 255, 0.5)
+}
+
+.secondSection div {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.secondSection p {
+    margin: 10px 0;
+}
+
+.secondSection p span {
+    color: rgb(70, 112, 241);
+}
+
+.aboutMe {
+    display: flex;
+}
+
+.thirdSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 110px;
+    padding-top: 40px;
+}
+
+.thirdSectionHeading {
+    font-size: 44px;
+    margin-top: -20px;
+}
+
+.skills-container {
+    margin: 40px 0;
+    margin-left: 50px;
+}
+
+.footer {
+    background-color: #0f172a;
+    color: #cbd5f5;
+    padding: 50px 20px 20px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-brand h3 {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.footer-links,
+.footer-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.footer a {
+    color: #cbd5f5;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #6366f1;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}

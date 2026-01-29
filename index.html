@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .skill-card {
+            background: rgba(255, 255, 255, 0.03); /* Very subtle fill */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Thin border */
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .skill-card i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        .skill-card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .html   { --brand-color: #e34c26; }
+        .css    { --brand-color: #264de4; }
+        .js     { --brand-color: #f7df1e; color: #f7df1e; } 
+        .python { --brand-color: #306998; }
+        .cpp    { --brand-color: #00599C; }
+        .mysql  { --brand-color: #00758F; }
+
+        .skill-card.html i { color: #e34c26; }
+        .skill-card.css i { color: #264de4; }
+        .skill-card.js i { color: #f7df1e; }
+        .skill-card.python i { color: #306998; }
+        .skill-card.cpp i { color: #00599C; }
+        .skill-card.mysql i { color: #00758F; }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), 
+                        0 0 15px var(--brand-color);
+            border-color: var(--brand-color);
+        }
+        .skill-card:hover i {
+            transform: scale(1.1);
+            text-shadow: 0 0 20px var(--brand-color);
+        }
+        .skill-card.js:hover h3 {
+            color: #f7df1e;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Pranav's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#aboutSection">About</a></li>
+                    <li><a href="#skillsSection">Skills</a></li>
+                    <li><a href="#projectSection">Projects</a></li>
+                    <li><a href="#educationSection">Education</a></li>
+                    <li><a href="#contactSection">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <p>Pranav</p>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg-image.png" alt="Image not found">
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="secondSection" id="aboutSection">
+            <h1 class="secondSectionHeading">About Me</h1>
+            <div class="secondSectionContent">
+                <div class="aboutMe">
+                    <div>
+                    <p>
+                        Hey! I’m <span>Pranav Thakur</span> — a tech-driven student passionate about building, learning, and pushing the limits of what 
+                        <br> code can do. I’m deeply interested in AI/ML, software engineering, and data-driven problem solving.
+                    </p>
+                    <p>
+                        I work primarily with <span>Python</span>, <span>C++</span>, and <span>JavaScript</span>, and I enjoy breaking down complex problems into clean,
+                        <br> efficient solutions. I believe strong fundamentals, consistent practice, and real-world projects are the fastest 
+                        <br> way to grow as a developer.
+                    </p>
+                    <p>
+                        I’m currently focused on sharpening my skills, building impactful projects, and preparing for research or 
+                        <br> internship opportunities in cutting-edge tech fields.
+                    </p>
+                    <p>
+                        Outside of coding, I enjoy playing <span>Chess</span> — a game that strengthens my <span>strategic thinking</span>, enhances 
+                        <br> <span>problem-solving abilities</span>, and builds <span>patience</span>, all of which translate directly into my approach to 
+                        <br> programming and learning.
+                    </p>
+                </div>
+                <img src="me-img.png" alt="Image not found">
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="thirdSection" id="skillsSection">
+            <h1 class="thirdSectionHeading">Skills</h1>
+            <div class="skills-container">
+        
+                <div class="skill-card html">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+
+                <div class="skill-card css">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+
+                <div class="skill-card js">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="skill-card python">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+
+                <div class="skill-card cpp">
+                    <i class="fa-solid fa-code"></i> 
+                    <h3>C++</h3>
+                </div>
+
+                <div class="skill-card mysql">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>MySQL</h3>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="fourthSection" id="projectSection">
+            <h1 class="fourthSectionHeading">Projects</h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                <div class="card-image" style="background-image: url('project1.jpg');"></div>
+                <div class="card-content">
+                    <span class="category">...Category...</span>
+                    <h3>Coming Soon...</h3>
+                    <p>...description...</p>
+                    <div class="card-tags">
+                    <span>Tech</span> <span>Stack</span> <span>Here</span>
+                    </div>
+                    <a href="#" class="view-btn">View Project</a>
+                </div>
+                </div>
+
+                <div class="project-card">
+                <div class="card-image" style="background-image: url('project2.jpg');"></div>
+                <div class="card-content">
+                    <span class="category">...Category...</span>
+                    <h3>Coming Soon</h3>
+                    <p>...description...</p>
+                    <div class="card-tags">
+                    <span>Tech</span> <span>Stack</span> <span>Here</span>
+                    </div>
+                    <a href="#" class="view-btn">View Project</a>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="fifthSection" id="educationSection">
+            <h1 class="fifthSectionHeading">Education</h1>
+            <div class="cards-section">
+                <div class="leftCards">
+                    <div class="edu-cards">
+                        <h3 class="school-name">XYZ School</h3>
+                        <p class="learning-year">2010 - 2012</p>
+                        <p class="course-name">Pre Primary</p>
+                    </div>
+                    <div class="edu-cards">
+                        <h3 class="school-name">S Chandra Public School</h3>
+                        <p class="learning-year">2012 - 2013</p>
+                        <p class="course-name">Pre Primary</p>
+                    </div>
+                    <div class="edu-cards">
+                        <h3 class="school-name">Meritorious Public School</h3>
+                        <p class="learning-year">2013 - 2017</p>
+                        <p class="course-name">Primary</p>
+                    </div>
+                    <div class="edu-cards">
+                        <h3 class="school-name">Little Flower Public School</h3>
+                        <p class="learning-year">2017 - 2019</p>
+                        <p class="course-name">Primary-Secondary</p>
+                    </div>
+                </div>
+                <div class="rightCards">
+                    <div class="edu-cards">
+                        <h3 class="school-name">S.D.B Vidyalaya</h3>
+                        <p class="learning-year">2019 - 2023</p>
+                        <p class="course-name">Secondary</p>
+                    </div>
+                    <div class="edu-cards">
+                        <h3 class="school-name">Lal Bahadur Shastri Mahavidyalaya</h3>
+                        <p class="learning-year">2023 - 2025</p>
+                        <p class="course-name">High School</p>
+                    </div>
+                    <div class="edu-cards">
+                        <h3 class="school-name">Sanjay Ghodawat University</h3>
+                        <p class="learning-year">2025 - 2029</p>
+                        <p class="course-name">Bachelor of Technology {A.I & Data Science}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="sixthSection" id="contactSection">
+            <h2>Contact Me</h2>
+            <p>Have a project or just want to say hi? 👋</p>
+
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input type="email" id="email" placeholder="Your Email" required />
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-links">
+                <a href="mailto:pranavthakur037@gmail.com">pranavthakur037@gmail.com</a>
+                <a href="https://github.com/pranav-037" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/pranav-thakur-55132b289/" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+
+                <div class="footer-brand">
+                <h3>Pranav Thakur</h3>
+                <p>AI/ML Enthusiast • Developer • Learner</p>
+                </div>
+
+                <div class="footer-links">
+                <a href="#aboutSection">About</a>
+                <a href="#skillsSection">Skills</a>
+                <a href="#projectSection">Projects</a>
+                <a href="#contactSection">Contact</a>
+                </div>
+
+                <div class="footer-socials">
+                <a href="https://github.com/pranav-037" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/pranav-thakur-55132b289/" target="_blank">LinkedIn</a>
+                <a href="mailto:pranavthakur037@gmail.com">Email</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Pranav Thakur. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Data Scientist', 'AI Researcher', 'Developer'],
+        typeSpeed: 50,
+    });
+    </script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Message sent successfully! 🚀");
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
