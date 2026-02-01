@@ -34,13 +34,15 @@
     justify-content: center;
     margin: 40px 0;
     font-size: 1.5rem;
-    border: 2px solid #ddd;
+    border: 1px solid #606060;
     border-radius: 10px;
 }
 
 .edu-cards:hover {
     transform: translateY(-6px);
-    box-shadow: 0 0 10px rgba(0, 100, 255, 0.5)
+    box-shadow: 0 0 10px rgb(74, 235, 250);
+    border-width: 0px;
+    border-radius: 10px;
 }
 
 .sixthSection {
